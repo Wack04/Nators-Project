@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+  *::selection {
+    background-color: #28b485;
+    color: white; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 10px; }
+
+h1 {
+  text-transform: uppercase;
+  color: white; }
+  h1 span {
+    display: block;
+    line-height: 4rem;
+    backface-visibility: hidden; }
+  h1 .hero__heading-main {
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    animation: MoveInLeft 2s ease-in; }
+  h1 .hero__heading-sub {
+    letter-spacing: 1.4rem;
+    white-space: nowrap;
+    animation: MoveInRight 2s ease-in; }
+
+@keyframes MoveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes MoveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.background_container {
+  position: relative;
+  background: linear-gradient(rgba(85, 197, 122, 0.9), rgba(40, 180, 133, 0.9)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 98vh;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
+  .background_container .navbar {
+    padding: 2rem;
+    background: transparent; }
+    .background_container .navbar .logo {
+      width: 4rem; }
+  .background_container .hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .background_container .btn-white {
+    all: unset;
+    cursor: pointer;
+    background-color: white;
+    color: #28b485;
+    border-radius: 2rem;
+    padding: 1.2rem 3.4rem;
+    margin-top: 4rem;
+    font-size: 1rem;
+    font-weight: 700; }
