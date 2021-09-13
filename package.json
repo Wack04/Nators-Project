@@ -9,6 +9,7 @@
   "author": "Akira Yagi",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "parcel-bundler": "^1.12.5"
   }
 }
